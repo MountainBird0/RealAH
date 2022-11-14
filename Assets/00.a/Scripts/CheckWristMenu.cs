@@ -20,20 +20,19 @@ public class CheckWristMenu : MonoBehaviour
 
     public void TouchBu()
     {
-        Debug.Log("터치이벤트들감");
+        Debug.Log("[CheckWristMenu] 터치이벤트들감");
 
         if (wall.activeSelf)
         {
-            Debug.Log("벽 숨김");
+            Debug.Log("[CheckWristMenu] 벽사라짐");
 
             wall.SetActive(false);
         }
         else
         {
-            Debug.Log("벽 나옴");
+            Debug.Log("[CheckWristMenu] 벽생김");
 
             wall.SetActive(true);
         }
-
     }
 }
